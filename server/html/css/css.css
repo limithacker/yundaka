@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+
+.contact { padding:0px 35px 0px 35px;}
+.contactb { padding:0px 15px 0px 15px;}
+.contactc { padding:0px 25px 0px 25px;}
+
+/*title*/
+.title {  height:68px; background-color:#3BAFDA; position:relative; border-radius:0px 0px 3px 3px;}
+.titleb { width:100%; height:65px; line-height:65px; background-color:#4FC1E9; color:#FFF; font-size:24px; text-align:center; border-radius:0px 0px 3px 3px; position:relative;}
+
+
+/*foot*/
+.footbox { width:100%; height:60px; position:fixed; left:0px; bottom:0px;}
+a.foota { background-color:#4FC1E9; width:20%; height:60px; background-repeat:no-repeat; background-position:center; background-size:25px auto; box-sizing:border-box; display:inline-block; float:left; }
+a.hover { background-color:#3BAFDA;}
+a.f1 { background-image:url(../images/home.png);}
+a.f2 { background-image:url(../images/inbox.png); border-left:1px solid #62CAEC;}
+a.f3 { background-image:url(../images/settings.png); border-left:1px solid #62CAEC; border-right:1px solid #38AFDA;}
+a.f4 { background-image:url(../images/user.png); border-right:1px solid #38AFDA;}
+a.f5 { background-image:url(../images/more.png);}
+
+/*reg and login*/
+
+.txt { width:100%; height:100%; line-height:100%; font-size:20px; border:none; outline:none; background-color:#FFF;}
+textarea.txt { width:100%; height:100%; line-height:25px; font-size:20px; border:none; outline:none; background-color:#FFF; }
+
+.tsa,.tsb {  height:45px; line-height:55px; color:#989FA9; font-size:16px; }
+.tsb { margin:0px 20px;}
+.txtboxa,.txtboxb {  height:38px; padding-left:40px; box-sizing:border-box; border:1px solid #D7D8DD;border-radius:2px;}
+.txtboxb { background-color:#F0F2F3; margin:0px 20px;}
+
+.txtboxbg { background-repeat:no-repeat; background-position:10px center; background-size:auto 20px;}
+.bga {background-image:url(../images/user-icon.png);}
+.bgb {background-image:url(../images/lock.png);}
+
+
+.cbtn { width:125px; height:40px; line-height:40px; color:#FFF;  font-size:16px; border:none; display:block; border-radius:3px; text-align:center; text-decoration:none;}
+.btna { margin:40px auto 0px auto; background-color:#4FC1E9;}
+.btnb { margin:0 auto; background-color:#4FC1E9;}
+.btnc { margin:40px auto 0px auto; background-color:#A0D468;}
+
+/*login-index*/
+
+.web_logo { margin:20px auto 0px auto; width:75px; height:80px; background-image:url(../images/logo.png); background-repeat:no-repeat; background-size:auto 80px;}
+.web_logo_txt { margin-top:3px; font-size:24px; color:#989FA9; letter-spacing:10px; text-align:center;}
+.web_logo_line {margin-top:10px; height:8px; background-color:#4FC1E9; border-radius:3px 3px 0px 0px;}
+
+.login_btn_box { margin-top:25px; background-color:#F5F7F9; height:145px; padding-top:15px; border-radius:0px 0px 4px 4px;}
+.forget_psw { display:block; height:40px; line-height:40px; text-align:center; color:#BEC2C6;font-size:14px; text-decoration:none;}
+.reg_new  { display:block; height:60px; line-height:60px; text-align:center; color:#FFF; background-color:#5D9CEC; font-size:16px; text-decoration:none; border-radius:0px 0px 4px 4px;}
+
+/*admin-info*/
+
+img.company_logo {margin:45px auto 0px auto; display:block; width:100%; max-width:288px; }
+.company_name { font-size:18px; color:#989FA9; text-align:center;}
+.company_info { line-height:30px; font-size:15px; color:#989FA9;}
+
+/*admin-list*/
+
+.man_card { border-bottom:4px solid #4FC1E9; height:78px; color:#989FA9;}
+.man_card .crl { width:110px; height:78px; line-height:78px; font-size:34px; float:left;}
+.man_card .crr { height:78px; line-height:26px; font-size:14px;}
+.man_card .crr .pt { overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+
+/*admin-choose*/
+
+.zs { color:#989FA9; font-size:14px; margin:20px auto 0px auto; text-align:center;}
+
+/*user-index*/
+
+.zyi { height:40px; line-height:40px; font-size:14px; color:#989FA9;}
+
+.dkts { height:35px; line-height:40px; font-size:16px; color:#989FA9;}
+.dktbox { height:36px; margin-left:25px; padding-left:15px;  background-color:#E1E4E9; box-shadow:-1px -1px #D1D4D9; border-radius:2px;}
+.dktxt { width:100%; height:100%; font-size:14px;color:#989FA9; border:none; outline:none; }
+
+.sbbtnbox {margin-left:25px; margin-top:25px; } 
+.sbbtnbox .zjbox { width:50%; float:left;}
+.dkbtn { margin:0 auto; width:90px; height:35px; line-height:35px; text-align:center; color:#FFF; font-size:16px; display:block; border:none; border-radius:4px; }
+.sea { background-color:#4FC1E9;}
+.seb { background-color:#A0D468;}
+
+.lockbox { position:absolute; top:24px; right:20px; width:35px; height:25px; background-color:#3BAFDA; border-radius:4px; background-image:url(../images/lock_w.png); background-repeat:no-repeat; background-position:center; background-size:auto 19px; display:block;}
+
+/*admin-addrule*/
+
+table.ut { margin-top:15px; color:#989FA9; width:100%;}
+table.ut th { height:30px; line-height:30px; font-size:20px; width:30%; font-weight:normal;}
+table.ut td { height:30px; line-height:30px; font-size:16px; text-align:center; position:relative;}
+
+.toon,.tooff { width:35px; height:30px; background-repeat:no-repeat; background-size:35px 25px; background-position:center; border:none; position:absolute; top:0px; left:50%; margin-left:-17px;}
+.toon { background-image:url(../images/toggle-on.png);}
+.tooff { background-image:url(../images/toggle-off.png);}
+
+/*admin-index*/
+
+.mapdiv { width:100%;}
+
+
+/*cmpcheck*/
+
+.mapdiv { width:100%; height:500px;}
+.cmpbdiv { width:100%; height:160px; border-bottom:4px solid #4FC1E9;}
+.cmpdiv { width:1200px; margin:0 auto;}
+
+.cmpdiv .cldiv { height:160px; float:left;}
+.cmpdiv .cldiv .cls { height:100px; }
+.cmpdiv .cldiv .cls .logo { display:block; height:100px; float:left;}
+.cmpdiv .cldiv .cls .cmptitle {display:block; height:100px; float:left;line-height:100px; font-size:36px; color:#B3BCC6;}
+
+.cmpdiv .cldiv .clx { height:60px; line-height:60px; font-size:20px;  color:#B3BCC6;}
+
+
+input.cl { width:125px; height:24px; cursor:pointer;}
+input.cd { width:36px; height:24px;}
+
+
+
+.cmpdiv .crdiv { height:130px; padding-top:30px; float:left; margin-left:100px;}
+.cmpdiv .crdiv a { display:block; width:90px; height:40px; line-height:40px; text-align:center; text-decoration:none; font-size:16px; color:#FFF; border-radius:3px; margin-top:15px;}
+.cmpdiv .crdiv a.lu { background-color:#A0D468;}
+.cmpdiv .crdiv a.lan { background-color:#4FC1E9;}

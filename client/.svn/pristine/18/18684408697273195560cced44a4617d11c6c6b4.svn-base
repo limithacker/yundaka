@@ -1,0 +1,24 @@
+$(function(){
+	
+	auth = $api.getStorage("auth");
+
+	
+	$.ajax({
+		   type:"GET",
+		   url:"http://123.206.96.123/yundaka/info.php",
+		   timeout : 5000,
+		   dataType:"json",
+		   data:{auth:auth},
+		   success:function(data,textStatus){
+			  var tstr="";
+			  tstr+="<div class='company_name mt30'>"+data.cname+"</div><div class='company_info mt25'><p>公司ID："+data.cid+"</p><p>注册人员数："+data.num+"人</p><p>帐号有效期："+data.avail+"</p></div>";
+			  $("#info").html(tstr);
+			  
+		   },
+		   error:function(){}
+			 
+		});
+	
+
+
+});

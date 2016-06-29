@@ -1,0 +1,36 @@
+
+$(function(){
+	$("#yg-reg").click(function(){regtypeajax(2);});
+	$("#qy-reg").click(function(){regtypeajax(1);});
+});
+
+
+function regtypeajax(e){
+
+$.ajax({
+		   type:"GET",
+		   url:"http://yundaka.aliapp.com/reg.php",
+		   timeout : 5000,
+		   dataType:"text",
+		   data:{type:e,
+			     usn:$("#usn").val(),
+		         psw:$("#psw").val(),
+				 tel:$("#tel").val(),
+				 name:$("#name").val(),
+				 cmpid:$("#cmpid").val()
+				 },
+		   success:function(data,textStatus){
+			   
+					if (data==1)
+					{alert ("注册成功!");
+					window.location.href="index.html";	
+					}		 
+					else
+					{ alert ("注册失败！请检查网络");
+					  
+					}  
+		   },
+		   error:function(){}
+			 
+		});	
+};

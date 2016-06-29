@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="stylesheet" href="../css/global.css" />
+<link rel="stylesheet" href="../css/css.css" />
+<script type="text/javascript" src="../script/jquery-1.8.3.min.js"></script>
+<title>云打卡</title>
+</head>
+
+<body>
+<div class="title">
+<div class="titleb">
+<a href="javascript:;" class="lockbox"></a>
+云打卡</div>
+</div>
+
+
+<div class="contactc">
+<div class="zyi">为了获得更精确的位置，建议您打开GPS定位选项</div>
+
+<form action="" method="post">
+
+<div class="dkts mt55">当前时间：</div>
+<div class="dktbox">
+<input type="text" class="dktxt" />
+</div>
+
+<div class="dkts">当前精度：</div>
+<div class="dktbox">
+<input type="text" class="dktxt" id="jd"/>
+</div>
+
+<div class="dkts">当前纬度：</div>
+<div class="dktbox">
+<input type="text" class="dktxt" id="wd"/>
+</div>
+
+<div class="dkts">所在位置：</div>
+<div class="dktbox">
+<input type="text" class="dktxt" id="addr"/>
+</div>
+
+<div class="dkts">街道：</div>
+<div class="dktbox">
+<input type="text" class="dktxt" id="street"/>
+</div>
+
+
+<div class="sbbtnbox">
+<div class="zjbox"><input type="button" class="dkbtn sea" id="sub" value="在此打卡" /></div>
+<div class="zjbox"><input type="button" class="dkbtn seb" id="flush" value="刷新位置"  onClick="flushpos();"/></div>
+<div class="cb"></div>
+</div>
+
+</form>
+
+</div>
+<div class="cb mb30"></div>
+
+</body>
+<script type="text/javascript" src="../script/user-index.js"></script>
+</html>

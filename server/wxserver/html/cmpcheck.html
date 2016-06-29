@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/global.css" />
+<link rel="stylesheet" href="css/css.css" />
+<link rel="stylesheet" href="css/manhuaDate.css" />
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/manhuaDate.1.0.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=BubV96ANNHQqYZ1HU7eSA0jf"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.js"></script>
+<link rel="stylesheet" href="http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.css" />
+<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.4/src/SearchInfoWindow_min.js"></script>
+<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.4/src/SearchInfoWindow_min.css" />
+
+
+
+<title>cmpcheck</title>
+</head>
+
+<body>
+<div class="cmpbdiv">
+<div class="cmpdiv">
+
+<div class="cldiv">
+<div class="cls">
+<img src="" alt="" class="logo"/>
+<div class="cmptitle">企业考勤自动检测系统</div>
+<div class="cb"></div>
+</div>
+
+<div class="clx">
+日期：&nbsp;&nbsp;<input type="text" class="cl" id="date" readonly="true"/>
+时间：&nbsp;&nbsp;<input type="text" class="cd" id="sh" />&nbsp;时&nbsp;<input type="text" class="cd" id="sm" />&nbsp;分~&nbsp;<input type="text" class="cd" id="eh" />&nbsp;时&nbsp;<input type="text" class="cd" id="em" />&nbsp;分&nbsp;&nbsp;
+&nbsp;&nbsp;
+员工姓名：&nbsp;&nbsp;
+
+<select id="usid">
+<option>==请选择==</option>
+<option value="11111">大胖</option>
+<option></option>
+<option></option>
+
+</select>
+
+<input type="hidden" id="plog" value=""/>
+<input type="hidden" id="plat" value=""/>
+<input type="hidden" id="r" value=""/>
+</div>
+
+</div><!--cldiv end-->
+
+<div class="crdiv">
+<a href="javascript:;" class="lu" id="reset">重置信息</a>
+<a href="javascript:;" class="lan" id="addrule">添加规则</a>
+</div>
+</div>
+</div>
+
+
+<div class="mapdiv" id="map"></div>
+
+</body>
+
+
+<script type="text/javascript" src="js/cmpcheck.js"></script>
+</html>

@@ -1,0 +1,42 @@
+$(function(){
+	if ($api.getStorage('type')=="1"){
+		window.location.href="admin-index.html";
+	}
+	else if ($api.getStorage('type')=="2"){
+		window.location.href="user-index.html";
+	}
+	$("#loginbtn").click(function(){
+		
+		$.ajax({
+		   type:"GET",
+		   url:"http://123.206.96.123/yundaka/login.php",
+		   timeout : 5000,
+		   dataType:"json",
+		   data:{usn:$("#usn").val(),psw:$("#psw").val()},
+		   success:function(data,textStatus){
+			   
+					if (data==0)
+					{alert ("密码错误或用户未经审核!");}		 
+					else
+					{ $api.setStorage('auth',data.auth);
+					  $api.setStorage('type',data.rtn);
+					  if (data.rtn=="1")
+					  {window.location.href="admin-index.html";}
+					  else if (data.rtn=="2") 
+					  {window.location.href="user-index.html";}
+					  else
+					  {alert ("返回值错误!请检查网络连接");}
+					  
+					}  
+		   },
+		   error:function(){}
+			 
+		});
+		
+		
+	});
+	
+
+});
+
+
